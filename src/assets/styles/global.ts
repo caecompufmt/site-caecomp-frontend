@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-    : root {
+    :root {
         font-size: 60%;
     }
     * {
@@ -15,7 +15,7 @@ export default createGlobalStyle`
     body {
         background: #FFF;
     }
-    # root {
+    #root {
         display: flex;
         align-items: center;
         justify-content: center;
