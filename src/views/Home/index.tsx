@@ -1,16 +1,11 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 
-import Slider from "../../components/Slider";
-import { slideItems } from "../../temp";
-
 const Home = () => {
   return (
-    <>
-      <Col>
-        <Slider data={slideItems} />
-      </Col>
-    </>
+    <Col className="d-flex align-items-center justify-content-center h-100">
+      <h1 className="font-weight-bold">Hello world, CAECOMP!</h1>
+    </Col>
   );
 };
 
