@@ -13,7 +13,7 @@ export const categoryLabelStyle: CSSProperties = {
 export const titleLabelStyle: CSSProperties = {
   color: "white",
   fontSize: 42,
-  fontWeight: 'bolder',
+  fontWeight: "bolder",
   lineHeight: "50px",
   textAlign: "left",
 };

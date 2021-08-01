@@ -1,9 +1,5 @@
 import React from "react";
-import { 
-  Carousel, 
-  Container, 
-  Row 
-} from "react-bootstrap";
+import { Carousel, Container, Row } from "react-bootstrap";
 import {
   categoryLabelStyle,
   containerStyle,
@@ -30,9 +26,7 @@ const Caption = ({ category, title, description }: SlideItem) => {
       </Row>
       <Row className="mb-3">
         <a href="/">
-          <h1 style={titleLabelStyle}>
-            {title.toUpperCase()}
-          </h1>
+          <h1 style={titleLabelStyle}>{title.toUpperCase()}</h1>
         </a>
       </Row>
       <Row>
@@ -42,18 +36,19 @@ const Caption = ({ category, title, description }: SlideItem) => {
   );
 };
 
-const Slider = (props: IProps) => {
-  let imageSettings = {
+const Slider = ({ data }: IProps) => {
+  const imageSettings = {
     width: "100vh",
     height: "787px",
   };
 
   return (
     <Carousel fade interval={1000}>
-      {props.data?.map((slideItem, key) => (
-        <Carousel.Item key={key}>
+      {data?.map((slideItem) => (
+        <Carousel.Item>
           <img
-            {...imageSettings}
+            width={imageSettings.width}
+            height={imageSettings.height}
             src={slideItem.src}
             className="d-block w-100"
             alt={slideItem.title}

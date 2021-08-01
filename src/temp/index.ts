@@ -4,7 +4,7 @@ import imageOne from "../assets/images/slider/mock@9600x5400.jpg";
 import imageTwo from "../assets/images/slider/mock2@9600x5400.jpg";
 import imageThree from "../assets/images/slider/mock3@5375x3583.jpg";
 
-export let slideItems: SlideItem[] = [
+export const slideItems: SlideItem[] = [
   {
     category: "Eventos",
     title: "Lançada a 1 semana da Engenharia de Computação!",
