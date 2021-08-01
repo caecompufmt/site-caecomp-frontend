@@ -1,5 +1,9 @@
 import React from "react";
-import { Carousel, Container, Row } from "react-bootstrap";
+import { 
+  Carousel, 
+  Container, 
+  Row 
+} from "react-bootstrap";
 import {
   categoryLabelStyle,
   containerStyle,
