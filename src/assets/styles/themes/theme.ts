@@ -9,19 +9,19 @@ export default {
 
     white: "#FFF",
     dark: "#1D1D1B",
-    light: "#A5ACAF",
+    light: "#CCC",
 
     success: "#008620",
     error: "#DC3545",
     warning: "#F2AF00",
-    info: "#00A9E0",
+    info: "#ED5D24",
 
     textDark: "#1D1D1B",
     textLight: "#A5ACAF",
 
     borderColor: "#EDEDED",
     backgroundColor: "#F9F9F9",
-    hoverLight: "rgba(183, 182, 182, 0.2)",
+    hoverLight: "#FF8C00",
   },
   borderRadius: {
     default: "16px",
