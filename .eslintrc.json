@@ -20,7 +20,9 @@
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
     "no-console": "off",
+    "react/jsx-props-no-spreading": "off",
     "no-underscore-dangle": "off",
+    "react/require-default-props": "off",
     "global-require": "error",
     "import/prefer-default-export": "off",
     "no-param-reassign": 0,
