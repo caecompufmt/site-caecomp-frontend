@@ -43,7 +43,7 @@ const Slider = ({ data }: IProps) => {
   };
 
   return (
-    <Carousel fade interval={1000}>
+    <Carousel fade interval={1000} className="d-flex">
       {data?.map((slideItem) => (
         <Carousel.Item>
           <img
