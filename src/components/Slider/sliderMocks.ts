@@ -1,11 +1,12 @@
-import { SlideItem } from "../components/Slider";
+import { SlideItem } from "./types";
 
-import imageOne from "../assets/images/slider/mock@9600x5400.jpg";
-import imageTwo from "../assets/images/slider/mock2@9600x5400.jpg";
-import imageThree from "../assets/images/slider/mock3@5375x3583.jpg";
+import imageOne from "./slider/mock@9600x5400.jpg";
+import imageTwo from "./slider/mock2@9600x5400.jpg";
+import imageThree from "./slider/mock3@5375x3583.jpg";
 
-export const slideItems: SlideItem[] = [
+const slideItems: SlideItem[] = [
   {
+    id: 0,
     category: "Eventos",
     title: "Lançada a 1 semana da Engenharia de Computação!",
     description:
@@ -13,6 +14,7 @@ export const slideItems: SlideItem[] = [
     src: imageOne,
   },
   {
+    id: 1,
     category: "Ipsum",
     title: "Et non aliqua proident enim aliqua elit.",
     description:
@@ -20,6 +22,7 @@ export const slideItems: SlideItem[] = [
     src: imageTwo,
   },
   {
+    id: 2,
     category: "Lorem Ipsum",
     title: "Ullamco incididunt reprehenderit labore et aute velit voluptate.",
     description:
@@ -27,3 +30,5 @@ export const slideItems: SlideItem[] = [
     src: imageThree,
   },
 ];
+
+export default slideItems;
