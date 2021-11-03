@@ -1,25 +1,33 @@
-import { CSSProperties } from "react";
+import styled from "styled-components";
+import { Carousel as CarouselBootstrap } from "react-bootstrap";
 
-export const containerStyle: CSSProperties = {
-  background: "rgba(0, 0, 0, 0.8)",
-  paddingLeft: 45,
-  paddingTop: 36,
-  paddingBottom: 38,
-};
-export const categoryLabelStyle: CSSProperties = {
-  color: "#979797",
-  fontSize: 18,
-};
-export const titleLabelStyle: CSSProperties = {
-  color: "white",
-  fontSize: 42,
-  fontWeight: "bolder",
-  lineHeight: "50px",
-  textAlign: "left",
-};
-export const descriptionLabelStyle: CSSProperties = {
-  color: "#979797",
-  fontSize: "22px",
-  lineHeight: "30px",
-  textAlign: "left",
-};
+export const Carousel = styled(CarouselBootstrap)`
+  & > div {
+    & > ol {
+      & > li {
+        background-color: red;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+      }
+    }
+  }
+`;
+
+export const Container = styled.div`
+  flex: 1;
+  display: flex;
+  background-color: #333;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ImageBackground = styled.img`
+  display: flex;
+  align-self: center;
+  width: 100vw;
+  height: 500px;
+  @media (max-width: 768px) {
+    height: 250px;
+  }
+`;

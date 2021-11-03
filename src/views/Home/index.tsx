@@ -2,7 +2,7 @@ import React from "react";
 
 import Slider from "../../components/Slider";
 
-import { slideItems } from "../../temp";
+import slideItems from "../../components/Slider/sliderMocks";
 
 const Home = () => {
   return (
