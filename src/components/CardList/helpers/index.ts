@@ -24,9 +24,3 @@ export function useWindowDimensions() {
 
   return windowDimensions;
 }
-
-export function setItemsAmountByWidth(width: number): number {
-  if (width < 800 && width > 768) return 2;
-  if (width < 768) return 1;
-  return 3;
-}

@@ -31,8 +31,6 @@ export const Title = styled.h1`
     background-color: rgba(18, 18, 18, 0.4);
     border-radius: 10px;
     @media (max-width: 768px) {
-      margin: 0px;
-      padding-left: 0px;
       display: flex;
     }
   }
