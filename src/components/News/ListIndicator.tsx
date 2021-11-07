@@ -3,13 +3,14 @@ import { Container } from "./list-indicator.styles";
 
 interface Props {
   orientation: "left" | "right";
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const ListIndicator = ({ orientation, onClick }: Props) => {
   return (
     <Container onClick={onClick}>
-      {orientation === "left" ? <PrevIcon /> : <NextIcon />}
+      {orientation === "left" && <PrevIcon />}
+      {orientation === "right" && <NextIcon />}
     </Container>
   );
 };

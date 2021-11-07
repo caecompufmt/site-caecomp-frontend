@@ -35,6 +35,18 @@ const newsItems: Array<CardProps> = [
     description: "Lorem Ipsum sit amet dolor...",
     image: imageOne,
   },
+  {
+    id: 5,
+    title: "Notícia 6",
+    description: "Lorem Ipsum sit amet dolor...",
+    image: imageOne,
+  },
+  {
+    id: 6,
+    title: "Notícia 7",
+    description: "Lorem Ipsum sit amet dolor...",
+    image: imageOne,
+  },
 ];
 
 export default newsItems;

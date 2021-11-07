@@ -14,4 +14,7 @@ export const Container = styled.div`
     cursor: pointer;
     background-color: #000;
   }
+  @media (max-width: 768px) {
+    margin-inline: 10px;
+  }
 `;

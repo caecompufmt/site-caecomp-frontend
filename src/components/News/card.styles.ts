@@ -1,8 +1,20 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    transform: scale(.99);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   background-color: #fff;
   margin: 91.5px 15px;
+  margin-bottom: 41px;
   flex-direction: column;
   border-radius: 15px;
   flex: 0;
@@ -10,12 +22,15 @@ export const Container = styled.div`
   height: 555px;
   display: flex;
   transition: all 0.5ms;
+  transition: transform 0.5s;
   &:hover {
     cursor: pointer;
     box-shadow: 3px 3px 30px #fff;
+    transform: scale(102%);
   }
   @media (max-width: 768px) {
     margin: 5px 5px;
+    transform: scale(0.8);
   }
 `;
 
