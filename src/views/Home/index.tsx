@@ -10,8 +10,8 @@ import newsItems from "../../components/News/newsMocks";
 const Home = () => {
   return (
     <>
-      {/* <Slider data={slideItems} /> */}
-      {/* <News data={newsItems} /> */}
+      <Slider data={slideItems} />
+      <News data={newsItems} />
       <About />
     </>
   );
