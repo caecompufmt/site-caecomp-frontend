@@ -14,6 +14,31 @@ export const Container = styled(ContainerBs)`
   place-content: center;
   place-items: center;
   height: 769px;
+  @media (max-width: 768px) {
+    transform: scale(80%);
+    place-content: center;
+    place-items: center;
+    box-shadow: none;
+    height: 100vh;
+    width: 100vw;
+  }
+  @media (max-width: 425px) {
+    flex: 1;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    box-shadow: none;
+    height: 100vh;
+    width: 100vw;
+  }
+  @media (max-width: 375px) {
+    padding: 0px;
+    place-content: center;
+    place-items: center;
+    box-shadow: none;
+    height: 100vh;
+    width: 100vw;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -23,11 +48,15 @@ export const ImageContainer = styled.div`
   box-shadow: -20px -20px 0px -6px #fff, -20px -19px 0px 1px ${borderColor};
   @media (max-width: 768px) {
     transform: scale(80%);
-    margin: 0px;
+    place-content: center;
+    place-items: center;
+    box-shadow: none;
+    margin-top: 60px;
   }
   @media (max-width: 425px) {
     transform: scale(60%);
-    margin: 0px;
+    place-content: center;
+    place-items: center;
   }
 `;
 
@@ -37,6 +66,13 @@ export const Image = styled.img`
   position: absolute;
   top: 5px;
   right: -5px;
+  @media (max-width: 768px) {
+    transform: scale(80%);
+    position: relative;
+  }
+  @media (max-width: 425px) {
+    transform: scale(60%);
+  }
 `;
 
 export const Title = styled.h1`
