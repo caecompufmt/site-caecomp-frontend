@@ -10,8 +10,7 @@ interface Props {
 
 const CardList: React.FC<Props> = ({ data }: Props) => {
   const { width } = useWindowDimensions();
-
-  const [cards, setCards] = useState<typeof data>(data);
+  const cards = data;
   const [pageNumber, setPageNumber] = useState<number>(0);
 
   const itemsPerPage = setItemsAmountByWidth(width);

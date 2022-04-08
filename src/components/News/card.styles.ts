@@ -1,15 +1,4 @@
-import styled, { keyframes } from "styled-components";
-
-const fadeIn = keyframes`
-  from {
-    transform: scale(.99);
-    opacity: 0.9;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-`;
+import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: #fff;
