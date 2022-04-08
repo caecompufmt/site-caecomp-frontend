@@ -9,8 +9,6 @@ export const Container = styled(ContainerBs)`
   background-image: url(${bgFromUrl});
   background-color: #fff;
   display: flex;
-  padding: 125px 344px 109px 344px;
-  margin-bottom: 100px;
   place-content: center;
   place-items: center;
   height: 769px;

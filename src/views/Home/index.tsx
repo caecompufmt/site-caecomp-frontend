@@ -6,6 +6,7 @@ import News from "../../components/News";
 
 import slideItems from "../../components/Slider/sliderMocks";
 import newsItems from "../../components/News/newsMocks";
+import Assignments from "../../components/Assignments";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Slider data={slideItems} />
       <News data={newsItems} />
       <About />
+      <Assignments />
     </div>
   );
 };
