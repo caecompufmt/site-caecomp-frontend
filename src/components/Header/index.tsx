@@ -7,21 +7,21 @@ import Button from "../forms/Button";
 import ActiveItemHeader from "./ActiveItemHeader";
 
 const navItens = [
-  { title: "Início", pathname: "/" },
-  { title: "Notícias", pathname: "/noticias" },
-  { title: "Sobre nós", pathname: "/sobre-nos" },
-  { title: "Atribuições", pathname: "/atribuicoes" },
-  { title: "Gestões", pathname: "/gestoes" },
-  { title: "Contatos", pathname: "/contatos" },
-  { title: "Cursos", pathname: "/cursos" },
-  { title: "Eventos", pathname: "/eventos" },
+  { title: "Início", scrollTo: "inicio" },
+  { title: "Notícias", scrollTo: "noticias" },
+  { title: "Sobre nós", scrollTo: "sobre-nos" },
+  { title: "Atribuições", scrollTo: "atribuicoes" },
+  { title: "Gestões", scrollTo: "gestoes" },
+  { title: "Contatos", scrollTo: "contatos" },
+  { title: "Cursos", scrollTo: "cursos" },
+  { title: "Eventos", scrollTo: "eventos" },
 ];
 
 const Header = () => {
   const history = useHistory();
 
-  const handleNavigate = (path: string) => {
-    history.push(path);
+  const handleNavigate = (scrollTo: string) => {
+    document.getElementById(scrollTo)?.scrollIntoView();
   };
 
   return (
@@ -37,11 +37,11 @@ const Header = () => {
               {navItens.map((item) => (
                 <Nav.Link
                   key={item.title}
-                  onClick={() => handleNavigate(item.pathname)}
+                  onClick={() => handleNavigate(item.scrollTo)}
                   className="ml-4"
                 >
                   <ActiveItemHeader
-                    pathname={item.pathname}
+                    pathname={item.scrollTo}
                     title={item.title}
                   />
                 </Nav.Link>

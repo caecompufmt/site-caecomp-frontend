@@ -11,7 +11,7 @@ interface Props {
 
 const Slider = ({ data }: Props) => {
   return (
-    <Container>
+    <Container id="inicio">
       <Carousel
         fade
         interval={1000}
