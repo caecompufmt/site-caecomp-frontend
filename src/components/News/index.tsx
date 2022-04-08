@@ -12,7 +12,7 @@ interface Props {
 const News = ({ data }: Props) => {
   return (
     <Container id="noticias">
-      <Title>Mais notícias</Title>
+      <Title>Notícias</Title>
       <CardList data={data} />
     </Container>
   );

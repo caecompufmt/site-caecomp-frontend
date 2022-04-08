@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { StyledSpan } from "./active-item-header.styles";
 
 const ActiveItemHeader = ({
@@ -10,13 +9,13 @@ const ActiveItemHeader = ({
   pathname: string;
 }) => {
   const [active, setActive] = useState(false);
-  const location = useLocation();
 
   useEffect(() => {
-    if (pathname === location.pathname) {
+    console.log(document.children);
+    if (document.activeElement?.id === pathname) {
       setActive(true);
     }
-  }, [pathname, location.pathname]);
+  }, [pathname]);
 
   return (
     <>
