@@ -9,3 +9,4 @@
 
 - yarn ou npm install para instalar as dependências
 - yarn start ou npm start para iniciar o projeto
+- 
